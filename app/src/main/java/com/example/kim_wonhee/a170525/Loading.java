@@ -11,6 +11,7 @@ public class Loading extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
+        setTitle("오늘 뭐 먹지?");
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

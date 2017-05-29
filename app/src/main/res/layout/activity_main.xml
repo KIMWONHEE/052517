@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kim_wonhee.a170525.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b7c6ff">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메뉴 이미지 변경 간격 (초)"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button"
+            android:text="처음으로"
+            android:onClick="onMyClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/start"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:onClick="onMyClick"
+            android:src="@drawable/main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="오늘 뭐 먹지?"
+            android:textColor="#002c8b"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="---"
+            android:textSize="20dp"
+            android:textColor="#002c8b"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
